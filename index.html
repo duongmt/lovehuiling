@@ -126,7 +126,10 @@
                 });
             </script>
         </div>
-        <audio id="bgmMusic" src="911.mp3" preload="auto" type="audio/mp3" autoplay="" loop=""></audio>
+        <audio id="bgmMusic" controls>
+            <source src="911.mp3">
+        </audio>
+        <script> document.getElementByID('bgmMusic').play(); </script>
         <script src="js/anijs-min.js"></script>
         <script src="js/anijs-helper-scrollreveal-min.js"></script>
         <script src="js/flu.js" type="text/javascript"></script>
